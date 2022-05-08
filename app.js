@@ -27,8 +27,8 @@ app.locals.title = `${capitalized(projectName)}`;
 // 👇 Start handling routes here
 const index = require('./routes/index');
 app.use('/', index);
-app.use('/movies', index);
-app.use('/movie-fichas', index)
+// app.use('/movies', index);
+// app.use('/movie-fichas', index)
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);
